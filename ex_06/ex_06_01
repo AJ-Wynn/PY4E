@@ -1,0 +1,21 @@
+total = 0
+count = 0
+
+while True:
+    num = input("Enter a number: ")
+    
+    try:
+        f_num = float(num)
+        count = count + 1
+        total = total + f_num
+
+    except:
+        if num == "done":
+            avg = total / count
+            print(total, count, avg)
+            break
+
+        else:
+            print("Invalid input")
+            continue
+

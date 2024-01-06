@@ -1,0 +1,2 @@
+sentence = 'monkeys like bananas'
+print(sentence.replace('n','@',3))

@@ -1,0 +1,34 @@
+# Function to compute pay
+def computepay(hours, rate):
+    if float(hours) <= 40:
+        pay = float(hours) * float(rate)
+        return(pay)
+
+    else:
+        ovt_hours = float(hours) - 40
+        pay = 40 * float(rate)
+        ovt_pay = ovt_hours * (float(rate) * 1.5)
+        total_pay = pay + ovt_pay
+        return(total_pay)
+
+
+hours = input("Enter Hours: ")
+try:
+    f_hours = float(hours)
+except:
+    print("Error, please enter numeric input")
+    exit()
+
+rate = input("Enter Rate: ")
+try:
+    f_rate = float(rate)
+except:
+    print("Error, please enter numeric input")
+    exit()
+
+print("Pay",computepay(hours, rate))
+
+
+
+
+

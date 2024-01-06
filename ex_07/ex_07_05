@@ -1,0 +1,6 @@
+text = 'X-DSPAM-Confidence:    0.8475'
+idx = text.find(':')
+newtext = text[idx+1:]
+
+value = float(newtext.strip())
+print(value)

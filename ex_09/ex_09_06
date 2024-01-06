@@ -1,0 +1,18 @@
+num_list = list()
+
+while True:
+    num = input("Enter a number: ")
+
+    try:
+        fnum = float(num)
+    except:
+        if num == "done":
+            print("Maximum: ", max(num_list))
+            print("Minimum: ", min(num_list))
+            exit()
+            
+        else:
+            print("Please enter a number")
+            continue
+    
+    num_list.append(fnum)

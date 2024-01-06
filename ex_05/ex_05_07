@@ -1,0 +1,31 @@
+def computegrade(score):
+    try:
+        float_score = float(score)
+    except:
+        print("Bad score")
+        exit()
+
+    if float_score < 0.0 or float_score > 1.0:
+        return("Bad score")
+
+    elif float_score >= 0.9:
+        return("A")
+
+    elif float_score >= 0.8:
+        return("B")
+
+    elif float_score >= 0.7:
+        return("C")
+
+    elif float_score >= 0.6:
+        return("D")
+
+    elif float_score < 0.6:
+        return("F")
+
+
+
+score = input("Enter score: ")
+print(computegrade(score))
+
+
